@@ -33,9 +33,9 @@
                 hover:[&>*]:rounded-2xl hover:[&>*]:p-2
                 md:font-semibold sm:hidden sm:[&>*]:hidden
                 ">
-        <li class="">Our Rockets</li>
-        <li class="">Testmonials</li>
-        <li class="">Contact Us</li>
+        <li>Our Rockets</li>
+        <li>Testmonials</li>
+        <li>Contact Us</li>
     </ol>
 </template>
 <script>
