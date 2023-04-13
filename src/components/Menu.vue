@@ -26,13 +26,16 @@
     </div>
     <ol :class="`${showingStatus}`" 
         class=" bg-green-800 float-right
-                h-screen overflow-x-hidden
+                h-screen overflow-hidden
                 flex flex-col items-end 
-                [&>*]:m-1 xs:[&>*]:text-lg
-                md:font-semibold xs:hidden sm:[&>*]:hidden">
-        <li>Our Rockets</li>
-        <li>Testmonials</li>
-        <li>Contact Us</li>
+                [&>*]:m-1 text-sm text-white 
+                hover:[&>*]:text-xl hover:[&>*]:border hover:[&>*]:border-sky-500
+                hover:[&>*]:rounded-2xl hover:[&>*]:p-2
+                md:font-semibold sm:hidden sm:[&>*]:hidden
+                ">
+        <li class="">Our Rockets</li>
+        <li class="">Testmonials</li>
+        <li class="">Contact Us</li>
     </ol>
 </template>
 <script>
