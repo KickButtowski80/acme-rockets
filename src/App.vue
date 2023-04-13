@@ -1,19 +1,20 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
   <div>
     <Menu></Menu>
+    <div>
+      <HelloWorld/>
+    </div>
   </div>
-
 </template>
 
 <script>
 import Menu from './components/Menu.vue'
+import HelloWorld from './components/HelloWorld.vue';
+
 export default {
   components: {
-    Menu
+    Menu,
+    HelloWorld,
   }
 }
 
