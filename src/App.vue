@@ -4,10 +4,19 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
-    <img src="./assets/img/rocketdab.png" 
-    class="h-20" alt="">
+    <Menu></Menu>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+
 </template>
+
+<script>
+import Menu from './components/Menu.vue'
+export default {
+  components: {
+    Menu
+  }
+}
+
+</script>
 
  
