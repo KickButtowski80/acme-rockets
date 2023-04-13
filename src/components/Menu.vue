@@ -17,10 +17,10 @@
             <li>Contact Us</li>
         </ol>
         <div class="block border-2 sm:hidden
-                    m-2 rounded-2xl" @click="toggleMenu">
-            <hr class="w-6 h-2 m-2 bg-white" />
-            <hr class="w-6 h-2 m-2 bg-white" />
-            <hr class="w-6 h-2 m-2 bg-white" />
+                    m-2 rounded-2xl border-red-900" @click="toggleMenu">
+            <hr class="w-6 h-1 m-2 bg-blue-400" />
+            <hr class="w-6 h-1 m-2 bg-blue-400" />
+            <hr class="w-6 h-1 m-2 bg-blue-400" />
         </div>
 
     </div>
