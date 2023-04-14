@@ -9,20 +9,21 @@
             </h2>
         </div>
          <!-- all the elements are not focusabl. we need to redsign the menu with nav element -->
-        <ol class=" hidden m-2
+        <nav class=" hidden m-2
                     sm:flex sm:items-center 
                     [&>*]:w-32 [&>*]:text-lg
                     md:[&>*]:text-xl md:font-semibold
                     hover:[&>*]:text-xl hover:[&>*]:border hover:[&>*]:border-sky-500
                     hover:[&>*]:rounded-2xl hover:[&>*]:p-2 hover:[&>*]:mx-2
                     active:[&>*]:bg-blue-700 
-                    focus:[&>*]:outline-none focus:[&>*]:ring-2 focus:[&>*]:ring-blue-900
+                    focus:[&>*]:outline-none focus:[&>*]:ring focus:[&>*]:ring-blue-900
+                    focus:[&>*]:rounded-full focus:[&>*]:p-2
                   "
                   >
-            <li>Our Rockets</li>
-            <li>Testmonials</li>
-            <li>Contact Us</li>
-        </ol>
+            <button >Our Rockets</button>
+            <button>Testmonials</button>
+            <button>Contact Us</button>
+        </nav>
         <div class="block border-2 sm:hidden
                     m-2 rounded-2xl border-red-900
                     [&>*]:bg-blue-400 [&>*]:w-6 [&>*]:h-1
