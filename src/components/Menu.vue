@@ -39,7 +39,6 @@
                 m-2 rounded-2xl border-red-900 [&>*]:bg-blue-400
                 [&>*]:w-10 [&>*]:h-1
                 flex items-center relative
-                hover:w-12 
                  "
                 @click="toggleMenu">
         <hr class="rotate-45 absolute">
