@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Menu></Menu>
-    <div>
+    <Menu class=""></Menu>
+    <div class="absolute -z-40">
       <HelloWorld/>
     </div>
   </div>
