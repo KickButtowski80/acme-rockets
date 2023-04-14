@@ -24,18 +24,29 @@
             <button>Testmonials</button>
             <button>Contact Us</button>
         </nav>
-        <div class="block border-2 sm:hidden
-                    m-2 rounded-2xl border-red-900
-                    [&>*]:bg-blue-400 [&>*]:w-6 [&>*]:h-1
-                    [&>*]:m-2" @click="toggleMenu">
+        <div  :class="`${showingHamburger}`"
+        class=" border-2  sm:hidden
+                m-2 rounded-2xl border-red-900
+                [&>*]:bg-blue-400 [&>*]:w-6 [&>*]:h-1
+                [&>*]:m-2
+                hover:[&>*]:w-12 " @click="toggleMenu">
             <hr/>
             <hr/>
             <hr/>
         </div>
-
-    </div>
-    <!-- all the elements are not focusabl. we need to redsign the menu with nav element -->
-    <nav :class="`${showingStatus}`"
+       <div  :class="`${showingCross}`"
+       class=" border-2 sm:hidden
+                m-2 rounded-2xl border-red-900 [&>*]:bg-blue-400
+                [&>*]:w-10 [&>*]:h-1
+                flex items-center relative
+                hover:w-12 
+                 "
+                @click="toggleMenu">
+        <hr class="rotate-45 absolute">
+        <hr class="-rotate-45">
+       </div>
+    </div>    
+    <nav :class="`${showingMenu}`"
         class=" bg-green-800 float-right
             h-screen overflow-hidden
             flex flex-col 
@@ -56,12 +67,16 @@
 export default {
     data() {
         return {
-            showingStatus: 'hidden',
+            showingMenu: 'hidden',
+            showingHamburger: 'block',
+            showingCross:'hidden',
         }
     },
     methods: {
         toggleMenu() {
-            this.showingStatus = this.showingStatus === 'hidden' ? 'block' : 'hidden'
+            this.showingMenu = this.showingMenu === 'hidden' ? 'block' : 'hidden'
+            this.showingHamburger = this.showingHamburger === 'hidden' ? 'block' : 'hidden'
+            this.showingCross = this.showingCross !== 'block' ? 'block' : 'hidden'
         }
 
     }
