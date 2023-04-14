@@ -9,7 +9,7 @@
             </h2>
         </div>
          <!-- all the elements are not focusabl. we need to redsign the menu with nav element -->
-        <nav class=" hidden m-2
+        <nav class="hidden m-2
                     sm:flex sm:items-center 
                     [&>*]:w-32 [&>*]:text-lg
                     md:[&>*]:text-xl md:font-semibold
@@ -35,19 +35,22 @@
 
     </div>
     <!-- all the elements are not focusabl. we need to redsign the menu with nav element -->
-    <ol :class="`${showingStatus}`"
+    <nav :class="`${showingStatus}`"
         class=" bg-green-800 float-right
             h-screen overflow-hidden
-            flex flex-col items-end 
-            [&>*]:m-1 text-sm text-white 
-            hover:[&>*]:text-xl hover:[&>*]:border hover:[&>*]:border-sky-500
-            hover:[&>*]:rounded-2xl hover:[&>*]:p-2
+            flex flex-col 
             md:font-semibold sm:hidden sm:[&>*]:hidden
-                    ">
-        <li >Our Rockets</li>
-        <li >Testmonials</li>
-        <li >Contact Us</li>
-    </ol>
+            [&>*]:m-1 [&>*]:text-lg text-gray-300
+            hover:[&>*]:text-xl hover:[&>*]:border hover:[&>*]:border-sky-500
+            hover:[&>*]:rounded-2xl hover:[&>*]:p-2 hover:[&>*]:mx-2
+            active:[&>*]:bg-blue-700 
+            focus:[&>*]:outline-none focus:[&>*]:ring focus:[&>*]:ring-blue-900
+            focus:[&>*]:rounded-full focus:[&>*]:p-2
+            ">
+        <button >Our Rockets</button>
+        <button >Testmonials</button>
+        <button >Contact Us</button>
+    </nav>
 </template>
 <script>
 export default {
