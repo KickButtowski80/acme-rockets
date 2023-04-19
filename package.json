@@ -2,11 +2,12 @@
   "name": "acme-rockets",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prettier": "npx prettier --write **/*.html"
   },
   "dependencies": {
     "vue": "^3.2.47"
