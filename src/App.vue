@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Menu class=""></Menu>
+    <Menu></Menu>
     <div class="absolute -z-40">
       <HelloWorld/>
     </div>

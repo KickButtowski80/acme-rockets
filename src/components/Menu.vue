@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-between bg-green-800
-                    text-gray-300">
+               text-gray-300">
         <div class="flex items-center py-4">
             <img class="w-8 ml-3" src="/favicon.ico" alt="aceme rocket logo">
             <h2 class="text-2xl md:text-3xl font-bold
