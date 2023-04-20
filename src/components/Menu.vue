@@ -5,10 +5,9 @@
             <img class="w-8 ml-3" src="/favicon.ico" alt="aceme rocket logo">
             <h2 class="text-2xl md:text-3xl font-bold
                             ml-3">
-                Aceme Rockets
+                Acme Rockets
             </h2>
         </div>
-         <!-- all the elements are not focusabl. we need to redsign the menu with nav element -->
         <nav class="hidden m-2
                     sm:flex sm:items-center 
                     [&>*]:w-32 [&>*]:text-lg
@@ -17,7 +16,7 @@
                     hover:[&>*]:rounded-2xl hover:[&>*]:p-2 hover:[&>*]:mx-2
                     active:[&>*]:bg-blue-700 
                     focus:[&>*]:outline-none focus:[&>*]:ring focus:[&>*]:ring-blue-900
-                    focus:[&>*]:rounded-full focus:[&>*]:p-2
+                    focus:[&>*]:rounded-full focus:[&>*]:p-2                  
                   "
                   >
             <button >Our Rockets</button>
@@ -46,8 +45,7 @@
        </div>
     </div>    
     <nav :class="`${showingMenu}`"
-        class=" bg-green-800 float-right
-            h-screen overflow-hidden
+        class="absolute right-0 bg-green-800       
             flex flex-col 
             md:font-semibold sm:hidden sm:[&>*]:hidden
             [&>*]:m-1 [&>*]:text-lg text-gray-300
@@ -55,7 +53,8 @@
             hover:[&>*]:rounded-2xl hover:[&>*]:p-2 hover:[&>*]:mx-2
             active:[&>*]:bg-blue-700 
             focus:[&>*]:outline-none focus:[&>*]:ring focus:[&>*]:ring-blue-900
-            focus:[&>*]:rounded-full focus:[&>*]:p-2
+            focus:[&>*]:rounded-full focus:[&>*]:p-2 
+            h-screen
             ">
         <button >Our Rockets</button>
         <button >Testmonials</button>

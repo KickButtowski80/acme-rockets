@@ -1,10 +1,13 @@
 <template>
-  <div>
-    <Menu></Menu>
-    <div class="absolute -z-40">
+  <div >
+    <div class="sticky top-0">
+      <Menu></Menu>
+    </div>
+    <div >
       <HelloWorld/>
     </div>
   </div>
+  <!-- do not forget to define global fonts  -->
 </template>
 
 <script>
