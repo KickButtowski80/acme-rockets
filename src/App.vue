@@ -1,12 +1,13 @@
 <template>
-  <div >
+  <div class="dark">
     <div class="sticky top-0">
-      <Menu></Menu>
-    </div>
-    <div >
-      <HelloWorld/>
-    </div>
-  </div>
+      <Menu>
+      </Menu>
+      </div>
+      <div>
+        <HelloWorld />
+      </div>
+   </div>
   <!-- do not forget to define global fonts  -->
 </template>
 
