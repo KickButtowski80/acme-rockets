@@ -26,8 +26,7 @@ export default {
                 document.documentElement.classList.add('dark')
                 this.themeStatus = '🌙'
                 localStorage.theme = 'dark'               
-            }
-       
+            }       
            
         }
     }
