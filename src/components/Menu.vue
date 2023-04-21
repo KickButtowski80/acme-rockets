@@ -9,22 +9,22 @@
             </h2>
         </div>
         <nav class="hidden m-2
-                        sm:flex sm:items-center 
-                        [&>*]:w-32 [&>*]:text-lg
-                        md:[&>*]:text-xl md:font-semibold
-                        hover:[&>*]:text-xl hover:[&>*]:border hover:[&>*]:border-sky-500
-                        hover:[&>*]:rounded-2xl hover:[&>*]:p-2 hover:[&>*]:mx-2
-                        active:[&>*]:bg-blue-700 
-                        focus:[&>*]:outline-none focus:[&>*]:ring focus:[&>*]:ring-blue-900
-                        focus:[&>*]:rounded-full focus:[&>*]:p-2     
-                        last:none             
+                    sm:flex sm:items-center 
+                    [&>*]:w-32 [&>*]:text-lg
+                    md:[&>*]:text-xl md:font-semibold
+                    hover:[&>*]:text-xl hover:[&>*]:border hover:[&>*]:border-sky-500
+                    hover:[&>*]:rounded-2xl hover:[&>*]:p-2 hover:[&>*]:mx-2
+                    active:[&>*]:bg-blue-700 
+                    focus:[&>*]:outline-none focus:[&>*]:ring focus:[&>*]:ring-blue-900
+                    focus:[&>*]:rounded-full focus:[&>*]:p-2     
+                    [&>*:last-child]:ring-red-950 [&>*:last-child]:ring-8
+                    [&>*:last-child]:rounded-full [&>*:last-child]:w-16
                       ">
             <button>Our Rockets</button>
             <button>Testmonials</button>
-            <button>Contact Us</button>
+            <button>Contact Us</button>           
             <ThemeBtn/>
         </nav>
-        
         <div :class="`${showingHamburger}`" class=" border-2  sm:hidden
                     m-2 rounded-2xl border-red-900
                     [&>*]:bg-blue-400 [&>*]:w-6 [&>*]:h-1

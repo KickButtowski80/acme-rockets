@@ -9,25 +9,23 @@
 export default {
     data() {
         return {
-            themeStatus: 'light'
+            themeStatus: '☀️'
         }
     },
     mounted() {
         localStorage.theme = 'dark'
-
     },
     methods: {
         toggleTheme() {
-            if (this.themeStatus === 'dark' || (!('theme' in localStorage)
+            if (this.themeStatus === '🌙' || (!('theme' in localStorage)
             && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                 document.documentElement.classList.remove('dark')
-                this.themeStatus = 'light'
+                this.themeStatus = '☀️'
                 localStorage.theme = 'light'
             } else {
                 document.documentElement.classList.add('dark')
-                this.themeStatus = 'dark'
-                localStorage.theme = 'dark'
-               
+                this.themeStatus = '🌙'
+                localStorage.theme = 'dark'               
             }
        
            
