@@ -12,20 +12,22 @@
                     sm:flex sm:items-center 
                     [&>*]:w-32 [&>*]:text-lg
                     md:[&>*]:text-xl md:font-semibold
-                    hover:[&>*]:text-xl hover:[&>*]:border hover:[&>*]:border-sky-500
+                    hover:[&>*]:text-xl hover:[&>*]:border
+                    hover:[&>*]:border-sky-500
                     hover:[&>*]:rounded-2xl hover:[&>*]:p-2 hover:[&>*]:mx-2
                     active:[&>*]:bg-blue-700 
                     focus:[&>*]:outline-none focus:[&>*]:ring focus:[&>*]:ring-blue-900
                     focus:[&>*]:rounded-full focus:[&>*]:p-2     
-                    [&>*:last-child]:ring-red-950 [&>*:last-child]:ring-8
-                    [&>*:last-child]:rounded-full [&>*:last-child]:w-16
-                      ">
+                    [&>*:last-child]:unset-all 
+                    [&>*:last-child]:ml-5
+                    hover:[&>*:last-child]:text-base hover:[&>*:last-child]:mx-0
+                                         ">
             <button>Our Rockets</button>
             <button>Testmonials</button>
             <button>Contact Us</button>           
-            <ThemeBtn/>
+            <ThemeBtn class="ring ring-red-950"/>
         </nav>
-        <div :class="`${showingHamburger}`" class=" border-2  sm:hidden
+        <div :class="{hidden: !showingMenu}" class=" border-2  sm:hidden
                     m-2 rounded-2xl border-red-900
                     [&>*]:bg-blue-400 [&>*]:w-6 [&>*]:h-1
                     [&>*]:m-2
@@ -34,7 +36,7 @@
             <hr />
             <hr />
         </div>
-        <div :class="`${showingCross}`" class=" border-2 sm:hidden
+        <div :class="{hidden: showingMenu}" class=" border-2 sm:hidden
                     m-2 rounded-2xl border-red-900 [&>*]:bg-blue-400
                     [&>*]:w-10 [&>*]:h-1
                     flex items-center relative
@@ -43,7 +45,7 @@
             <hr class="-rotate-45">
         </div>
     </div>
-    <nav :class="`${showingMenu}`" class="absolute right-0 bg-green-800       
+    <nav :class="{hidden: showingMenu}" class="absolute right-0 bg-green-800       
                 flex flex-col 
                 md:font-semibold sm:hidden sm:[&>*]:hidden
                 [&>*]:m-1 [&>*]:text-lg text-gray-300
@@ -62,26 +64,17 @@
     </nav>
 </template>
 <script>
-// import ThemeBtn from './ThemeBtn.vue'
+
 export default {
-    // components:{
-    //     ThemeBtn,
-    // },
     data() {
         return {
-            showingMenu: 'hidden',
-            showingHamburger: 'block',
-            showingCross: 'hidden',
-
+            showingMenu: true,
         }
     },
     methods: {
         toggleMenu() {
-            this.showingMenu = this.showingMenu === 'hidden' ? 'block' : 'hidden'
-            this.showingHamburger = this.showingHamburger === 'hidden' ? 'block' : 'hidden'
-            this.showingCross = this.showingCross !== 'block' ? 'block' : 'hidden'
+         this.showingMenu = !this.showingMenu
         }
-
     }
 }
 </script>
