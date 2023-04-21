@@ -1,11 +1,11 @@
 <template>
-    <div class="flex justify-between bg-green-800
+    <div class=" flex justify-between bg-green-800
                    text-gray-300">
         <div class="flex items-center py-4">
             <img class="w-8 ml-3" src="/favicon.ico" alt="aceme rocket logo">
             <h2 class="text-2xl md:text-3xl font-bold
                                 ml-3">
-                Acme Rockets
+                <a href="#hero">Acme Rockets</a>
             </h2>
         </div>
         <nav class="hidden m-2
@@ -21,13 +21,13 @@
                     [&>*:last-child]:unset-all 
                     [&>*:last-child]:ml-5
                     hover:[&>*:last-child]:text-base hover:[&>*:last-child]:mx-0
-                                         ">
-            <button>Our Rockets</button>
-            <button>Testmonials</button>
-            <button>Contact Us</button>           
-            <ThemeBtn class="ring ring-red-950"/>
+                                         " aria-label="main">
+            <a href="#rockets">Our Rocket</a>
+            <a href="#testmonials">Testmonials</a>
+            <a href="#contact-us">Contact Us</a>
+            <ThemeBtn />
         </nav>
-        <div :class="{hidden: !showingMenu}" class=" border-2  sm:hidden
+        <div :class="{ hidden: !showingMenu }" class=" border-2  sm:hidden
                     m-2 rounded-2xl border-red-900
                     [&>*]:bg-blue-400 [&>*]:w-6 [&>*]:h-1
                     [&>*]:m-2
@@ -35,8 +35,9 @@
             <hr />
             <hr />
             <hr />
+            <!-- &#9776;  it is unicode for hambergure icon-->
         </div>
-        <div :class="{hidden: showingMenu}" class=" border-2 sm:hidden
+        <div :class="{ hidden: showingMenu }" class=" border-2 sm:hidden
                     m-2 rounded-2xl border-red-900 [&>*]:bg-blue-400
                     [&>*]:w-10 [&>*]:h-1
                     flex items-center relative
@@ -45,7 +46,7 @@
             <hr class="-rotate-45">
         </div>
     </div>
-    <nav :class="{hidden: showingMenu}" class="absolute right-0 bg-green-800       
+    <nav :class="{ hidden: showingMenu }" class="absolute right-0 bg-green-800       
                 flex flex-col 
                 md:font-semibold sm:hidden sm:[&>*]:hidden
                 [&>*]:m-1 [&>*]:text-lg text-gray-300
@@ -55,11 +56,10 @@
                 focus:[&>*]:outline-none focus:[&>*]:ring focus:[&>*]:ring-blue-900
                 focus:[&>*]:rounded-full focus:[&>*]:p-2 
                 h-screen
-                ">
-        <button>Our Rockets</button>
-        <button>Testmonials</button>
-        <button>Contact Us</button>
-        <hr>
+                " aria-label="mobile">
+        <a href="#rockets">Our Rocket</a>
+        <a href="#testmonials">Testmonials</a>
+        <a href="#contact-us">Contact Us</a>
         <ThemeBtn />
     </nav>
 </template>
@@ -73,7 +73,7 @@ export default {
     },
     methods: {
         toggleMenu() {
-         this.showingMenu = !this.showingMenu
+            this.showingMenu = !this.showingMenu
         }
     }
 }
