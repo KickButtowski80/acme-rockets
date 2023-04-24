@@ -4,9 +4,10 @@
       <Menu>
       </Menu>
       </div>
-      <div>
+      <main>
+        <Hero/>
         <HelloWorld />
-      </div>
+      </main>
    </div>
   <!-- do not forget to define global fonts  -->
 </template>
@@ -14,10 +15,12 @@
 <script>
 import Menu from './components/Menu.vue'
 import HelloWorld from './components/HelloWorld.vue';
+import Hero from './components/Hero.vue';
 
 export default {
   components: {
     Menu,
+    Hero,
     HelloWorld,
   }
 }
