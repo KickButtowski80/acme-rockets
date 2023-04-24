@@ -9,7 +9,7 @@
               <span class='text-purple-500'>Where No Rocket </span> <br>  
                Has Gone <br>
                Before...
-               <section class='text-sm text-gray-600 mt-10 mb-5'>
+               <section class='text-sm font-normal text-gray-600 mt-10 mb-5'>
                 We're building rockets for the next <br>
                 century today. From the moon to <br>
                 Mars, Jupiter and beyound ...🚀<br>
