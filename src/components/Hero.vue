@@ -3,7 +3,8 @@
         <section class='h-screen
                         flex flex-col justify-center items-center
                         sm:flex-row' >
-           <section class='font-bold text-2xl md:text-4xl'>
+           <section class='font-bold text-2xl md:text-4xl
+                           h-1/3'>
                We Boldy Go <br>
               <span class='text-purple-500'>Where No Rocket </span> <br>  
                Has Gone <br>
