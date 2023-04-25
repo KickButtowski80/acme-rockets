@@ -1,6 +1,6 @@
 <template lang="">
     <section class='mx-auto max-w-lg lg:max-w-4xl 
-                   flex flex-col  justify-center items-center
+                   flex flex-col justify-center items-center
                    md:flex-row'>
         <section class='h-screen
                         flex flex-col justify-center items-center 
