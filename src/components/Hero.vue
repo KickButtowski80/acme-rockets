@@ -3,8 +3,12 @@
                    flex flex-col  justify-center items-center
                    md:flex-row'>
         <section class='h-screen
-                        flex flex-col justify-center items-center mt-2
+                        flex flex-col justify-center items-center 
                         sm:flex-row' >
+                        <section>
+               <img src="../assets/img/rocketdab.png" alt="rocketman dab"
+               class="w-72 ">
+           </section>
            <section class='font-bold text-2xl md:text-4xl
                            max-w-xs leading-normal '>
                We Boldy Go <br>
@@ -18,10 +22,7 @@
                 Think Acme Rockets.
                </section>
            </section> 
-           <section>
-               <img src="../assets/img/rocketdab.png" alt="rocketman dab"
-               class="w-72 ">
-           </section>
+       
          
         </section>
     </section>
