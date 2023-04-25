@@ -1,7 +1,9 @@
 <template lang="">
-    <section class='mx-auto max-w-lg lg:max-w-4xl'>
+    <section class='mx-auto max-w-lg lg:max-w-4xl 
+                   flex flex-col  justify-center items-center
+                   md:flex-row'>
         <section class='h-screen
-                        flex flex-col items-center mt-2
+                        flex flex-col justify-center items-center mt-2
                         sm:flex-row' >
            <section class='font-bold text-2xl md:text-4xl
                            max-w-xs leading-normal '>
