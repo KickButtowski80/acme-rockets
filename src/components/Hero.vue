@@ -1,7 +1,7 @@
 <template lang="">
     <section class='h-screen 
                     flex flex-col justify-center items-center 
-                    md:flex-row md:justify-evenly' >
+                    md:flex-row-reverse md:justify-evenly' >
         <section>
             <img src="../assets/img/rocketdab.png" alt="rocketman dab"
             class="w-72 ">
