@@ -6,7 +6,9 @@
     </div>
     <main>
       <Hero id="rockets" />
-      <hr id="testmonials">
+      <hr id="testmonials" class=" dark:bg-gray-300 
+                                   w-1/2 h-1 rounded mx-auto
+                                  ">
       <HelloWorld />
     </main>
   </div>
