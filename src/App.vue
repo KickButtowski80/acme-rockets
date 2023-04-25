@@ -3,13 +3,13 @@
     <div class="sticky top-0">
       <Menu>
       </Menu>
-      </div>
-      <main>
-        <Hero id="rockets"/>
-        <hr id="testmonials" >
-        <HelloWorld />
-      </main>
-   </div>
+    </div>
+    <main>
+      <Hero id="rockets" />
+      <hr id="testmonials">
+      <HelloWorld />
+    </main>
+  </div>
   <!-- do not forget to define global fonts  -->
 </template>
 
