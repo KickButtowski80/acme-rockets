@@ -1,5 +1,5 @@
 <template>
-    <div class=" flex justify-between bg-green-800
+    <div class="flex justify-between bg-green-800
                    text-gray-300">
         <div class="flex items-center py-4">
             <img class="w-8 ml-3" src="/favicon.ico" alt="aceme rocket logo">
@@ -57,8 +57,8 @@
                 focus:[&>*]:rounded-full focus:[&>*]:p-2 
                 h-screen
                 " aria-label="mobile">
-        <a href="#rockets">Our Rocket</a>
-        <a href="#testmonials">Testmonials</a>
+        <a href="#rockets" @click="goToPlaces('rockets')">Our Rocket</a>
+        <a href="#testmonials" @click="goToPlaces('testmonials')">Testmonials</a>
         <a href="#contact-us">Contact Us</a>
         <ThemeBtn />
     </nav>
@@ -74,6 +74,14 @@ export default {
     methods: {
         toggleMenu() {
             this.showingMenu = !this.showingMenu
+        },
+        goToPlaces(place) {            
+            const elem = document.getElementById(place);
+            elem.scrollIntoView(
+                {
+                    behavior: "smooth",
+                    block: 'start'
+                })
         }
     }
 }
