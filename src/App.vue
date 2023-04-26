@@ -8,7 +8,7 @@
       <Hero id="hero" />
       <hr  id="rockets"
       class=" dark:bg-gray-300 
-                pt-10 w-1/2 h-1 rounded mx-auto">
+                w-1/2 h-1 rounded mx-auto">
 
       <OurRockets />
       <hr id="testmonials" class=" dark:bg-gray-300 

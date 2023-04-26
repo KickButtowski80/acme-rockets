@@ -1,8 +1,5 @@
 <template lang="">
- <section >
-    <h2 class="text-4xl font-semibold text-center
-              my-10 ">Our Rockets</h2>
- </section>
+ <TitleSction title="Our Rockets"/> 
  <section class='flex flex-col items-center
                  sm:flex-row  sm:justify-evenly my-5'>
     <div class=" border-2 border-gray-500 rounded-lg
