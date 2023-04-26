@@ -2,35 +2,42 @@
  <TitleSction title="Our Rockets"/> 
  <section class='flex flex-col items-center
                  sm:flex-row  sm:justify-evenly my-5'>
-    <div class=" border-2 border-gray-500 rounded-lg
+    <div v-for='({img,name,price}) in rocketsInfo' :key='price'
+    class=" border-2 border-gray-500 rounded-lg
                flex flex-col items-center 
                 mx-5 my-5 w-2/3 p-2">
-         <img src="/src/assets/img/rocketman.png" alt="rocket man"
+                
+         <img :src=img alt="rocket man"
          class="w-1/3">
-         <h5>Explorer</h5>
-         <p>$</p>
+         <h5>{{name}}</h5>
+         <p>{{price}}</p>
     </div>
-    <div class=" border-2 border-gray-500 rounded-lg
-               flex flex-col items-center
-               mx-5 my-5 w-2/3 p-2">
-         <img src="/src/assets/img/rocketride.png" alt="rocket man"
-         class="w-1/3">
-         <h5>Advanturer</h5>
-         <p>$$</p>
-    </div>
-    <div class=" border-2 border-gray-500 rounded-lg
-               flex flex-col items-center
-               mx-5 my-5 w-2/3 p-2">
-         <img src="/src/assets/img/rocketlaunch.png" alt="rocket man"
-         class="w-1/3">
-         <h5>Infinity</h5>
-         <p>$$$</p>
-    </div>
+   
  </section>
 </template>
 <script>
 export default {
-    
+     data() {
+          return {
+               rocketsInfo: [
+                    {
+                         img: '/src/assets/img/rocketman.png',
+                         name: 'Explorer',
+                         price: '$'
+                    },
+                    {
+                         img: '/src/assets/img/rocketride.png',
+                         name: 'Advanturer',
+                         price: '$$'
+                    },
+                    {
+                         img: '/src/assets/img/rocketlaunch.png',
+                         name: 'Infinity',
+                         price: '$$$'
+                    },
+               ]
+          }
+     }
 }
 </script>
 <style lang="">
