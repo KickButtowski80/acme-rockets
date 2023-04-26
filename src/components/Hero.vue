@@ -1,5 +1,5 @@
 <template lang="">
-    <section class='h-screen 
+    <section class='h-[90vh]
                     flex flex-col justify-center items-center 
                     md:flex-row-reverse md:justify-evenly' >
         <section>
@@ -20,8 +20,9 @@
         Mars, Jupiter and beyound ...🚀<br>
         Think Acme Rockets.
         </section>
-     </article>         
-    </section>
+    </article>         
+</section>
+
 </template>
 <script>
 export default {
