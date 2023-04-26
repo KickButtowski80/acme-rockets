@@ -6,8 +6,9 @@
     </div>
     <main>
       <Hero id="hero" />
-      <hr class=" dark:bg-gray-300 
-                 w-1/2 h-1 rounded mx-auto">
+      <hr  id="rockets"
+      class=" dark:bg-gray-300 
+                pt-10 w-1/2 h-1 rounded mx-auto">
 
       <OurRockets />
       <hr id="testmonials" class=" dark:bg-gray-300 

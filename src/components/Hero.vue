@@ -1,5 +1,5 @@
 <template lang="">
-    <section class='h-[90vh]
+    <section class='h-screen
                     flex flex-col justify-center items-center 
                     md:flex-row-reverse md:justify-evenly' >
         <section>

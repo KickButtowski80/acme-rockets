@@ -1,5 +1,5 @@
 <template lang="">
- <section id="rockets">
+ <section >
     <h2 class="text-4xl font-semibold text-center
               my-10 ">Our Rockets</h2>
  </section>
