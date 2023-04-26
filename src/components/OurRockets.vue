@@ -5,10 +5,10 @@
     <div v-for='({img,name,price}) in rocketsInfo' :key='price'
     class=" border-2 border-gray-500 rounded-3xl
           shadow-xl
-               flex flex-col items-center 
-                mx-5 my-5 w-2/3 p-2">
+          flex flex-col items-center 
+           mx-5 my-5 w-2/3 p-2">
                 
-         <img :src=img alt="rocket man"
+         <img :src='img' :alt='name'
          class="w-1/3">
          <h5>{{name}}</h5>
          <p>{{price}}</p>
