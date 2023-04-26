@@ -1,7 +1,7 @@
 <template lang="">    
     <section >
         <h2 class="text-4xl font-semibold text-center
-              my-10 ">{{title}}</h2>
+              my-20 ">{{title}}</h2>
     </section>
    
 </template>
