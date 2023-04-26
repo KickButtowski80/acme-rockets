@@ -3,7 +3,8 @@
  <section class='flex flex-col items-center
                  sm:flex-row  sm:justify-evenly my-5'>
     <div v-for='({img,name,price}) in rocketsInfo' :key='price'
-    class=" border-2 border-gray-500 rounded-lg
+    class=" border-2 border-gray-500 rounded-3xl
+          shadow-xl
                flex flex-col items-center 
                 mx-5 my-5 w-2/3 p-2">
                 
