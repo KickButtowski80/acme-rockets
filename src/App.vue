@@ -5,7 +5,7 @@
       </Menu>
     </div>
     <main>
-      <Hero id="rockets" />
+      <Hero id="hero" />
       <hr class=" dark:bg-gray-300 
                  w-1/2 h-1 rounded mx-auto">
 
