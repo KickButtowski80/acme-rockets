@@ -4,7 +4,7 @@
                     md:flex-row-reverse md:justify-evenly' >
         <section>
             <img src="../assets/img/rocketdab.png" alt="rocketman dab"
-            class="w-72 ">
+            class="w-72 md:w-96">
         </section>
     <article class='font-bold text-2xl md:text-4xl
                     max-w-xs leading-normal '>
