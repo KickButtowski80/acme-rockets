@@ -14,7 +14,7 @@
         </span> <br>  
         Has Gone <br>
         Before...
-        <section class='my-5 text-sm font-normal text-slate-600 '>
+        <section class='my-5 text-sm md:text-xl font-normal text-slate-600 '>
         We're building rockets for the next <br>
         century today. From the moon to <br>
         Mars, Jupiter and beyound ...🚀<br>
