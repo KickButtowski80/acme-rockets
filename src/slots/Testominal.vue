@@ -1,5 +1,5 @@
 <template lang="">
-    <section class='mt-20 max-w-md w-4/5
+    <figure class='mt-20 max-w-md w-4/5
                     mx-auto relative -z-40'>
     <p class="border-2 border-green-600 bg-green-500
               text-slate    rounded-3xl p-2
@@ -11,9 +11,8 @@
     <footer class='text-4xl absolute right-0
                    text-gray-600 font-semibold'>
         --<slot name='author'></slot>
-    </footer>
-    
-</section>
+    </footer>    
+    </figure>
 </template>
 <script>
 export default {
