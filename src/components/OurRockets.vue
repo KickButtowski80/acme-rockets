@@ -22,18 +22,18 @@ export default {
      data() {
           return {
                rocketsInfo: [
-                    {
-                         img: '../assets/img/rocketman.png',
+                    {   img: '',
+                         img: '../src/assets/img/rocketman.png',
                          name: 'Explorer',
                          price: { amount: '$', explanation: 'Affordable Exploration' }
                     },
                     {
-                         img: '../assets/img/rocketride.png',
+                         img: '../src/assets/img/rocketride.png',
                          name: 'Advanturer',
                          price: { amount: '$$', explanation: 'Best Selling Rockets!' }
                     },
                     {
-                         img: '../assets/img/rocketlaunch.png',
+                         img: '../src/assets/img/rocketlaunch.png',
                          name: 'Infinity',
                          price: { amount: '$$$', explanation: 'Luxury Starship' }
                     },
