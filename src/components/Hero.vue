@@ -3,7 +3,7 @@
                     flex flex-col justify-center items-center 
                     md:flex-row-reverse md:justify-evenly' >
         <section>
-            <img src="../src/imgs/rocketdab.png" alt="rocketman dab"
+            <img src="/src/imgs/rocketdab.png" alt="rocketman dab"
             class="w-72 md:w-96">
         </section>
     <article class='font-bold text-2xl md:text-4xl
