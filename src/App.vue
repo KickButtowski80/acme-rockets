@@ -24,7 +24,7 @@
 <script>
 import Menu from './components/Menu.vue'
 import OurRockets from './components/OurRockets.vue';
-import HelloWorld from './components/HelloWorld.vue';
+import HelloWorld from './components/Testmonials.vue';
 import Hero from './components/Hero.vue';
 
 export default {
