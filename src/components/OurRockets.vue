@@ -9,9 +9,8 @@
            mx-5 my-5 w-2/3 p-2">                
          <img :src='img' :alt='name' class="w-1/3">
          <h5>{{name}}</h5> 
-        
-          <p  class='sm:block md:hidden'>{{price.amount}}</p>    
-          <p  class='hidden md:block'>{{price.explanation}}</p> 
+         <p  class='sm:block md:hidden'>{{price.amount}}</p>    
+         <p  class='hidden md:block'>{{price.explanation}}</p> 
          
     </div>
    
