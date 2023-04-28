@@ -6,7 +6,8 @@
     class=" border-2 border-gray-500 rounded-3xl
           shadow-xl
           flex flex-col items-center 
-           mx-5 my-5 w-2/3 p-2">                
+           mx-5 my-5 w-2/3 p-2">    
+              
          <img :src='img' :alt='name' class="w-1/3">
          <h5>{{name}}</h5> 
          <p  class='sm:block md:hidden'>{{price.amount}}</p>    
@@ -22,17 +23,17 @@ export default {
           return {
                rocketsInfo: [
                     {
-                         img: '/src/assets/img/rocketman.png',
+                         img: 'src/assets/img/rocketman.png',
                          name: 'Explorer',
                          price: { amount: '$', explanation: 'Affordable Exploration' }
                     },
                     {
-                         img: '/src/assets/img/rocketride.png',
+                         img: 'src/assets/img/rocketride.png',
                          name: 'Advanturer',
                          price: { amount: '$$', explanation: 'Best Selling Rockets!' }
                     },
                     {
-                         img: '/src/assets/img/rocketlaunch.png',
+                         img: 'src/assets/img/rocketlaunch.png',
                          name: 'Infinity',
                          price: { amount: '$$$', explanation: 'Luxury Starship' }
                     },
