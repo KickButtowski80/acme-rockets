@@ -22,6 +22,7 @@
         <figcaption class='italic 
                     text-4xl flex justify-end
                     text-black font-semibold
+                    dark:text-white
                     '>
             &#8212<slot name='author'>Unknown</slot>
         </figcaption>    
