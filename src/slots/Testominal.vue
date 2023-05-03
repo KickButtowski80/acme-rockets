@@ -1,8 +1,8 @@
 <template lang="">
-    <figure class='mt-20 w-4/5 max-w-md 
+    <figure class='mt-20 md:w-4/5 max-w-md 
                     mx-auto relative -z-40'>
     <blockquote class="border-2 border-green-600 bg-green-500
-              text-slate rounded-3xl p-5
+              text-slate rounded-3xl pl-14 pr-8 py-12
               text-2xl
                before:content-['“'] 
                after:content-['”']">
