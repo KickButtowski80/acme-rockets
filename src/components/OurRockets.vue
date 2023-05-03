@@ -21,6 +21,7 @@ export default {
      data() {
           return {
                rocketsInfo: [
+                    
                     {
                          img: '/imgs/rocketman.png',
                          name: 'Explorer',
