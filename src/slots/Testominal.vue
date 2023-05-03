@@ -8,22 +8,23 @@
                 before:content-['\201C'] 
                 before:font-bold
                 before:text-9xl
+                before:text-slate-500
                 after:content-['\201D']
                 after:font-bold
                 after:text-9xl
                 after:flex
                 after:justify-end
+                after:text-slate-500
               ">
                 
         <slot></slot>
         </blockquote>
-        <footer class='text-4xl flex justify-end
+        <figcaption class='italic 
+                    text-4xl flex justify-end
                     text-black font-semibold
-                    
-                   
                     '>
-            --<slot name='author'>Unknown</slot>
-        </footer>    
+            &#8212<slot name='author'>Unknown</slot>
+        </figcaption>    
     </figure>
 </template>
 <script>
