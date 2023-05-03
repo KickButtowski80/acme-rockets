@@ -7,7 +7,7 @@
         Acme
         has always been three-linefor me. Their Exploer rocket arrived in a wooden
         crate as expected.
-        Lif-long Customer! A++ shopping experince 
+        Lif-long Customer! A++ shopping experince 💯
      </Testominal>
     <Testominal v-for='t in 4'>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, soluta laudantium atque aliquid labore repudiandae? 

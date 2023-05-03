@@ -21,8 +21,8 @@
         </blockquote>
         <figcaption class='italic 
                     text-4xl flex justify-end
-                    text-black font-semibold
-                    dark:text-white
+                   font-semibold
+                    dark:text-slate-600
                     '>
             &#8212<slot name='author'>Unknown</slot>
         </figcaption>    
