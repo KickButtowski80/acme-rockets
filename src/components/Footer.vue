@@ -12,7 +12,7 @@
         <section class="flex flex-col 
                         justify-top items-center gap-2">
             <a href="#rockets">Our Rockets</a>
-            <a href="#testimonial">Testimonails</a>
+            <a href="#testimonials">Testimonails</a>
             <a href="#contact-us">Contact Us</a>
         </section>
         <section class="flex flex-col">
