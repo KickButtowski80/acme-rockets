@@ -20,8 +20,8 @@
                                    w-1/2 h-1 rounded mx-auto
                                   mt-20">
      <Contact/>
-
     </main>
+    <Footer></Footer>
   </div>
   <!-- do not forget to define global fonts  -->
 </template>
@@ -32,6 +32,7 @@ import Hero from './components/Hero.vue';
 import OurRockets from './components/OurRockets.vue';
 import Testmonials from './components/Testmonials.vue';
 import Contact from './components/Contact.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   components: {
@@ -40,6 +41,7 @@ export default {
     OurRockets,
     Testmonials,
     Contact,
+    Footer,
   }
 }
 
