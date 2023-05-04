@@ -1,5 +1,6 @@
 <template lang="">    
     <button 
+    class="!text-2xl md:text-4xl"
     @click='toggleTheme'
     >
     {{ themeStatus }}
