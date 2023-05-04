@@ -16,9 +16,10 @@
                                   ">
 
       <Testmonials />
-      <hr id="testmonials" class=" dark:bg-gray-300 
+      <hr id="contact-us" class=" dark:bg-gray-300 
                                    w-1/2 h-1 rounded mx-auto
                                   ">
+     <Contact/>
 
     </main>
   </div>
@@ -27,9 +28,10 @@
 
 <script>
 import Menu from './components/Menu.vue'
+import Hero from './components/Hero.vue';
 import OurRockets from './components/OurRockets.vue';
 import Testmonials from './components/Testmonials.vue';
-import Hero from './components/Hero.vue';
+import Contact from './components/Contact.vue';
 
 export default {
   components: {
@@ -37,6 +39,7 @@ export default {
     Hero,
     OurRockets,
     Testmonials,
+    Contact,
   }
 }
 
