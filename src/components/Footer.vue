@@ -12,7 +12,7 @@
             Phone:
             <a href="tel:+15555555555">(555)555-5555</a> 
         </address>
-        <hr class="md:hidden">
+        <hr class="md:hidden m-5 ">
         <section class="flex
                         md:flex md:flex-col 
                         md:justify-top md:items-center gap-2">
@@ -20,7 +20,7 @@
             <a href="#testmonials">Testimonails</a>
             <a href="#contact-us">Contact Us</a>
         </section>
-        <hr class="md:hidden">
+        <hr class="md:hidden m-5 ">
         <section class="flex flex-col">
             <span>Copyright &copy; {{currentYear}}</span>
             <span>All Rights Reserved</span>
