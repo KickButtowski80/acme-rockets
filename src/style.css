@@ -6,6 +6,9 @@
     .unset-all{
         all: unset;
     }
+    .section-min-height{
+        min-height: calc(100vh - 48px);
+    }
 }
  
 @layer base{
