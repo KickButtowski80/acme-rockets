@@ -15,10 +15,11 @@
                                    w-1/2 h-1 rounded mx-auto
                                   ">
 
-      <Testmonials />
+      <Testmonials/>
       <hr id="contact-us" class=" dark:bg-gray-300 
                                    w-1/2 h-1 rounded mx-auto
-                                  mt-20">
+                                  ">
+                                  
      <Contact/>
     </main>
     <Footer></Footer>
