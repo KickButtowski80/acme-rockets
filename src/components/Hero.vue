@@ -1,7 +1,8 @@
 <template lang="">
     <section class='h-screen scroll-mt-20
                     flex flex-col justify-center items-center 
-                    md:flex-row-reverse md:justify-evenly' >
+                    md:flex-row-reverse md:justify-evenly
+                    ' >
         <section>
             <img src="/imgs/rocketdab.png" alt="rocketman dab"
             class="w-72 md:w-96">
