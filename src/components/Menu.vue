@@ -57,9 +57,9 @@
                 focus:[&>*]:rounded-full focus:[&>*]:p-2 
                 h-screen
                 " aria-label="mobile">
-        <a href="#rockets" @click="goToPlaces('rockets')">Our Rocket</a>
-        <a href="#testmonials" @click="goToPlaces('testmonials')">Testmonials</a>
-        <a href="#contact-us" @click="goToPlaces('contact-us')">Contact Us</a>
+        <a href="#rockets">Our Rocket</a>
+        <a href="#testmonials">Testmonials</a>
+        <a href="#contact-us">Contact Us</a>
         <ThemeBtn />
     </nav>
 </template>
@@ -75,14 +75,6 @@ export default {
         toggleMenu() {
             this.showingMenu = !this.showingMenu
         },
-        goToPlaces(place) {            
-            const elem = document.getElementById(place);
-            elem.scrollIntoView(
-                {
-                    behavior: "smooth",
-                    block: 'start'
-                })
-        }
     }
 }
 </script>
