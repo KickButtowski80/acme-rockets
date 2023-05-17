@@ -5,7 +5,7 @@
             <img class="w-8 ml-3" src="/favicon.ico" alt="aceme rocket logo">
             <h2 class="text-2xl md:text-3xl font-bold
                                 ml-3">
-                <a href="#hero" @click="goToPlaces('hero')">Acme Rockets</a>
+                <a href="#hero">Acme Rockets</a>
             </h2>
         </div>
         <nav class="hidden m-2
