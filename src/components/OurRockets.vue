@@ -17,18 +17,15 @@
             <h5>{{name}}</h5>
             <p  class='md:hidden'>{{price.amount}}</p>
             <p  class='hidden md:block group-hover:hidden             
-            '>{{price.explanation}}</p>
-            <!-- <p class="opacity-0 hover:opacity-100 duration-300">{{info}}</p>-->
+            '>{{price.explanation}}</p>            
             <hr class=" dark:bg-gray-300 
                w-1/2 h-1 rounded mx-auto
-               "/>
+               "/>            
          </div>
-         <div class="hidden group-hover:flex justify-center
-          content-between  items-center
+         <div class="hidden group-hover:block  rounded-3xl
           bg-gray-900 opacity-70  text-white
           text-center font-medium p-2 mx-5 my-5 w-2/3 ">
-            <p class="hidden group-hover:flex
-              ">{{info}}</p>
+            <p>{{info}}</p>
          </div>
       </div>
    </section>
