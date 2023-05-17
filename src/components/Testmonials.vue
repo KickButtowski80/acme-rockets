@@ -16,6 +16,11 @@
         Izak T
       </template>
     </Testominal> 
+    <Testominal>
+        your testominal goes here
+        you will makes us happy to let's know 
+        how we do 😃
+     </Testominal>
   </section>
 </template>
 <script>
