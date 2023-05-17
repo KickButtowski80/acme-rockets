@@ -1,5 +1,5 @@
 <template lang="">
-<div class="h-screen">
+<div class="h-auto md:h-screen">
    <TitleSction title="Our Rockets"/>
    <section id='cards' class='flex flex-col items-center 
       sm:flex-row md:mt-40'>
