@@ -1,7 +1,7 @@
 <template lang="">
 <div class="h-screen">
    <TitleSction title="Our Rockets"/>
-   <section id='cards' class='flex flex-col items-center
+   <section id='cards' class='flex flex-col items-center justify-center
       sm:flex-row'>
       <div v-for='{img,name,price,info} in rocketsInfo' :key='price'
          class="group"
@@ -24,10 +24,11 @@
                "/>
          </div>
          <div class="hidden group-hover:flex justify-center
-          content-between w-full items-center
+          content-between  items-center
           bg-gray-900 opacity-70  text-white
-          text-center font-medium p-2 ">
-            <p class="hidden group-hover:flex">{{info}}</p>
+          text-center font-medium p-2 mx-5 my-5 w-2/3 ">
+            <p class="hidden group-hover:flex
+              ">{{info}}</p>
          </div>
       </div>
    </section>
