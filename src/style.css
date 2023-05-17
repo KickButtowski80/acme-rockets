@@ -9,10 +9,20 @@
     .section-min-height{
         min-height: calc(100vh - 48px);
     }
+    .cards > div[style*='display: none'] {
+        background: #00ff00;
+      }
 }
  
 @layer base{
     html {
         scroll-behavior: smooth;
       }
+}
+
+@layer components {
+    #cards:has(.group:hover) .card:not(.card:hover) p,
+    #cards:has(.group:hover) .card:not(.card:hover) h5 {
+        display: none;
+    }
 }

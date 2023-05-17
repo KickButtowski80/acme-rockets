@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 
 export default {
   darkMode: 'class',
@@ -15,6 +16,10 @@ export default {
       }
     },
   },
-  plugins: [ ],
+  plugins: [
+    plugin(function({ addVariant }) {
+      addVariant("child-cards", "#cards &");
+    })
+   ],
 }
 
