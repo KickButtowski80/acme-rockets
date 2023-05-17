@@ -30,7 +30,7 @@
         <div :class="{ hidden: !showingMenu }" class=" border-2  sm:hidden
                     m-2 rounded-2xl border-red-900
                     [&>*]:bg-blue-400 [&>*]:w-6 [&>*]:h-1
-                    [&>*]:m-2
+                    [&>*]:m-2 cursor-pointer
                     hover:[&>*]:w-12 " @click="toggleMenu">
             <hr />
             <hr />
