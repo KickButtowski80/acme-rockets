@@ -1,7 +1,7 @@
 <template lang="" >
     <TitleSction title="Contact"/> 
-    <form  action="" class="mx-4 my-20                
-                    flex flex-col gap-5">
+    <form  action="" class=" my-20                
+                    flex flex-col gap-5 max-w-xl md:max-w-2xl mx-auto">
         <label for="subject" class="text-2xl">Subject:</label>
         <input type="text" name="subject" id="subject"
         placeholder="Your Subject ...✉️" 
@@ -24,11 +24,3 @@
         </button>
     </form> 
 </template>
-<script>
-export default {
-
-}
-</script>
-<style lang="">
-    
-</style>
