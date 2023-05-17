@@ -22,7 +22,7 @@
                w-1/2 h-1 rounded mx-auto
                "/>            
          </div>
-         <div class="hidden group-hover:block  rounded-3xl
+         <div class="hidden group-hover:block -z-9 rounded-3xl
           bg-gray-900 opacity-70  text-white
           text-center font-medium p-2 mx-5 my-5 w-2/3 ">
             <p>{{info}}</p>
