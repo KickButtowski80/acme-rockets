@@ -9,7 +9,7 @@
   .section-min-height {
     min-height: calc(100vh - 48px);
   }
-  .cards > div[style*='display: none'] {
+  .cards:hover > div[style*='display: none'] {
     background: #00ff00;
   }
 }
