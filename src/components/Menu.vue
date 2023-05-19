@@ -52,12 +52,7 @@
         class="absolute right-0 bg-green-800 [&>*]:m-3      
             flex flex-col
             md:font-semibold sm:hidden sm:[&>*]:hidden
-            [&>*]:text-lg text-gray-300
-            hover:[&>*]:text-xl hover:[&>*]:border hover:[&>*]:border-sky-500
-            hover:[&>*]:rounded-2xl hover:[&>*]:p-2 hover:[&>*]:mx-2
-            active:[&>*]:bg-blue-700 
-            focus:[&>*]:outline-none focus:[&>*]:ring focus:[&>*]:ring-blue-900
-            focus:[&>*]:rounded-full focus:[&>*]:p-2 
+            [&>*]:text-lg text-gray-300     
             h-screen
             ">
             <a href="#rockets">Our Rocket</a>
