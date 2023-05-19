@@ -2,7 +2,7 @@
     <div>
         <div class="flex justify-between bg-green-800
                text-gray-300">
-              
+
             <div class="flex items-center py-4">
                 <img class="w-8 ml-3" src="/favicon.ico" alt="aceme rocket logo">
                 <h2 class="text-2xl md:text-3xl font-bold
@@ -59,7 +59,6 @@
             focus:[&>*]:rounded-full focus:[&>*]:p-2 
             h-screen
             ">
-            
             <a href="#rockets">Our Rocket</a>
             <a href="#testmonials">Testmonials</a>
             <a href="#contact-us">Contact Us</a>
@@ -76,8 +75,8 @@ export default {
             showingMenu: true,
         }
     },
-    watch:{
-        IsOutOfMenu(newValue){
+    watch: {
+        IsOutOfMenu(newValue) {
             this.showingMenu = newValue;
         }
     },
