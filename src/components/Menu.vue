@@ -63,16 +63,16 @@
             h-screen
             ">
             <Transition name="fade">
-                <a href="#rockets" v-show="!showingMenu"
-                style=" transition-delay: 15ms ">Our Rocket</a>        
+                <a href="#rockets" class="animate-open-menu" v-show="!showingMenu"
+                style=" transition-delay: 100ms ">Our Rocket</a>        
             </Transition>
             <Transition name="fade">
-                <a href="#testmonials" v-show="!showingMenu"
-                     style=" transition-delay: 35ms ">Testmonials</a>
+                <a href="#testmonials" class="animate-open-menu" v-show="!showingMenu"
+                     style=" transition-delay: 300ms ">Testmonials</a>
             </Transition>
             <Transition name="fade">
-                <a href="#contact-us" v-show="!showingMenu"
-                style=" transition-delay: 50ms ">Contact Us</a>
+                <a href="#contact-us" class="animate-open-menu" v-show="!showingMenu"
+                style=" transition-delay: 400ms ">Contact Us</a>
             </Transition>
             <ThemeBtn />
         </nav>
