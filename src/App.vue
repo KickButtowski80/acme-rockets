@@ -49,9 +49,6 @@ export default {
   },
   methods: {
     IsOutOfMenuClicked(e) {
-      //  debugger;
-      console.log(e.target.getAttribute('aria-label'))
-      console.log(e.target.parentNode.getAttribute('aria-label'))
       const locMenu = e.target.getAttribute('aria-label')
       const parentLocMenu = e.target.parentNode.getAttribute('aria-label')
       if (locMenu === 'mobile' || parentLocMenu === 'mobile')
