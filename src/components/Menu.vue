@@ -48,7 +48,8 @@
                 <hr class="-rotate-45">
             </div>
         </div>
-        <nav :class="{ hidden: showingMenu }" class="absolute right-0 bg-green-800 [&>*]:m-3      
+        <nav :class="{ hidden: showingMenu }" 
+        class="absolute right-0 bg-green-800 [&>*]:m-3      
             flex flex-col
             md:font-semibold sm:hidden sm:[&>*]:hidden
             [&>*]:text-lg text-gray-300
