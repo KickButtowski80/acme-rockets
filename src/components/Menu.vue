@@ -29,27 +29,30 @@
                 <a href="#contact-us">Contact Us</a>
                 <ThemeBtn />
             </nav>
-            <div :class="{ hidden: !showingMenu }" class=" border-2  sm:hidden
-                m-2 rounded-2xl border-red-900
-                [&>*]:bg-blue-400 [&>*]:w-6 [&>*]:h-1
-                [&>*]:m-2 cursor-pointer
-                hover:[&>*]:w-12 " @click="toggleMenu" aria-label="mobile">
-                <hr />
-                <hr />
-                <hr />
-                <!-- &#9776;  it is unicode for hambergure icon-->
-            </div>
-            <div :class="{ hidden: showingMenu }" class=" border-2 sm:hidden
-                m-2 rounded-2xl border-red-900 [&>*]:bg-blue-400
-                [&>*]:w-10 [&>*]:h-1
-                flex items-center relative
-                 " @click="toggleMenu">
-                <hr class="rotate-45 absolute">
-                <hr class="-rotate-45">
-            </div>
+            <Transition name="rotate">
+                <div v-show="showingMenu" :class="{ hidden: !showingMenu }" class=" border-2  sm:hidden
+                    m-2 rounded-2xl border-red-900
+                    [&>*]:bg-blue-400 [&>*]:w-6 [&>*]:h-1
+                    [&>*]:m-2 cursor-pointer
+                    hover:[&>*]:w-12 " @click="toggleMenu" aria-label="mobile">
+                    <hr />
+                    <hr />
+                    <hr />
+                    <!-- &#9776;  it is unicode for hambergure icon-->
+                </div>
+            </Transition>
+            <Transition>
+                <div v-show="!showingMenu"  :class="{ hidden: showingMenu }" class=" border-2 sm:hidden
+                    m-2 rounded-2xl border-red-900 [&>*]:bg-blue-400
+                    [&>*]:w-10 [&>*]:h-1
+                    flex items-center relative
+                     " @click="toggleMenu">
+                    <hr class="rotate-45 absolute">
+                    <hr class="-rotate-45">
+                </div>
+            </Transition>
         </div>
-        <nav :class="{ hidden: showingMenu }" 
-        class="absolute right-0 bg-green-800 [&>*]:m-3      
+        <nav :class="{ hidden: showingMenu }" class="absolute right-0 bg-green-800 [&>*]:m-3      
             flex flex-col
             md:font-semibold sm:hidden sm:[&>*]:hidden
             [&>*]:text-lg text-gray-300     
@@ -83,3 +86,27 @@ export default {
     }
 }
 </script>
+
+<style>
+
+.v-enter-active,
+.v-leave-active {
+  transition: transform 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+    transform: rotate(90deg);
+}
+
+
+.rotate-enter-active,
+.rotate-leave-active {
+  transition: transform 0.5s ease;
+}
+
+.rotate-enter-from,
+.rotate-leave-to {
+    transform: rotate(-90deg);
+}
+</style>
