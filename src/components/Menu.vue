@@ -33,7 +33,7 @@
                 m-2 rounded-2xl border-red-900
                 [&>*]:bg-blue-400 [&>*]:w-6 [&>*]:h-1
                 [&>*]:m-2 cursor-pointer
-                hover:[&>*]:w-12 " @click="toggleMenu">
+                hover:[&>*]:w-12 " @click="toggleMenu" aria-label="mobile">
                 <hr />
                 <hr />
                 <hr />
@@ -58,7 +58,7 @@
             focus:[&>*]:outline-none focus:[&>*]:ring focus:[&>*]:ring-blue-900
             focus:[&>*]:rounded-full focus:[&>*]:p-2 
             h-screen
-            " aria-label="mobile">
+            ">
             
             <a href="#rockets">Our Rocket</a>
             <a href="#testmonials">Testmonials</a>
