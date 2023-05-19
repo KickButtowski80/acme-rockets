@@ -5,7 +5,7 @@
                     ' >
         <section>
             <img src="/imgs/rocketdab.png" alt="rocketman dab"
-            class="w-52 sm:w-72 md:w-96">
+            class="w-64 sm:w-72 md:w-96">
         </section>
     <article class='font-bold text-2xl md:text-4xl
                     max-w-xs leading-normal '>
