@@ -64,15 +64,15 @@
             ">
             <Transition name="fade">
                 <a href="#rockets" v-show="!showingMenu"
-                style=" transition-delay: 1ms ">Our Rocket</a>        
+                style=" transition-delay: 10ms ">Our Rocket</a>        
             </Transition>
             <Transition name="fade">
                 <a href="#testmonials" v-show="!showingMenu"
-                     style=" transition-delay: 12ms ">Testmonials</a>
+                     style=" transition-delay: 30ms ">Testmonials</a>
             </Transition>
             <Transition name="fade">
                 <a href="#contact-us" v-show="!showingMenu"
-                style=" transition-delay: 30ms ">Contact Us</a>
+                style=" transition-delay: 40ms ">Contact Us</a>
             </Transition>
             <ThemeBtn />
         </nav>
