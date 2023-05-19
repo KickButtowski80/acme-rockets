@@ -30,23 +30,27 @@
                 <ThemeBtn />
             </nav>
             <Transition name="rotate">
-                <div v-show="showingMenu" :class="{ hidden: !showingMenu }" class=" border-2  sm:hidden
+                <div v-show="showingMenu" :class="{ hidden: !showingMenu }" 
+                 class=" border-2  sm:hidden
                     m-2 rounded-2xl border-red-900
                     [&>*]:bg-blue-400 [&>*]:w-6 [&>*]:h-1
                     [&>*]:m-2 cursor-pointer
-                    hover:[&>*]:w-12 " @click="toggleMenu" aria-label="mobile">
+                    hover:[&>*]:w-12 " 
+                    @click="toggleMenu" aria-label="mobile"
+                    >
                     <hr />
                     <hr />
                     <hr />
                     <!-- &#9776;  it is unicode for hambergure icon-->
                 </div>
-            </Transition>
-            <Transition>
-                <div v-show="!showingMenu"  :class="{ hidden: showingMenu }" class=" border-2 sm:hidden
+            </Transition >
+            <Transition name="negative-rotate">
+                <div v-show="!showingMenu" :class="{ hidden: showingMenu }" class=" border-2 sm:hidden
                     m-2 rounded-2xl border-red-900 [&>*]:bg-blue-400
                     [&>*]:w-10 [&>*]:h-1
                     flex items-center relative
-                     " @click="toggleMenu">
+                     " @click="toggleMenu"
+                     >
                     <hr class="rotate-45 absolute">
                     <hr class="-rotate-45">
                 </div>
@@ -58,9 +62,18 @@
             [&>*]:text-lg text-gray-300     
             h-screen
             ">
-            <a href="#rockets">Our Rocket</a>
-            <a href="#testmonials">Testmonials</a>
-            <a href="#contact-us">Contact Us</a>
+            <Transition name="fade">
+                <a href="#rockets" v-show="!showingMenu"
+                style=" transition-delay: 1ms ">Our Rocket</a>        
+            </Transition>
+            <Transition name="fade">
+                <a href="#testmonials" v-show="!showingMenu"
+                     style=" transition-delay: 12ms ">Testmonials</a>
+            </Transition>
+            <Transition name="fade">
+                <a href="#contact-us" v-show="!showingMenu"
+                style=" transition-delay: 30ms ">Contact Us</a>
+            </Transition>
             <ThemeBtn />
         </nav>
     </div>
@@ -88,25 +101,34 @@ export default {
 </script>
 
 <style>
-
-.v-enter-active,
-.v-leave-active {
-  transition: transform 0.5s ease;
+.negative-rotate-enter-active,
+.negative-rotate-leave-active {
+    transition: transform 0.5s ease;
 }
 
-.v-enter-from,
-.v-leave-to {
-    transform: rotate(90deg);
+.negative-rotate-enter-from,
+.negative-rotate-leave-to {
+    transform: rotate(-90deg);
 }
 
 
 .rotate-enter-active,
 .rotate-leave-active {
-  transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .rotate-enter-from,
 .rotate-leave-to {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
