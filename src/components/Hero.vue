@@ -1,5 +1,5 @@
 <template lang="">
-    <section class='h-screen scroll-mt-20
+    <section class='h-screen scroll-mt-20 md:h-[50%] md:my-20
                     flex flex-col justify-center items-center 
                     md:flex-row-reverse md:justify-evenly
                     ' >

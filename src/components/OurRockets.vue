@@ -1,8 +1,8 @@
 <template lang="">
-<div class="h-auto md:h-screen">
+<div class="h-auto  md:h-[50%] mt-20">
    <TitleSction title="Our Rockets"/>
    <section id='cards' class='flex flex-col items-center 
-      sm:flex-row sm:justify-center md:mt-40'>
+      sm:flex-row sm:justify-center md:my-20'>
       <div v-for='{img,name,price,info} in rocketsInfo' :key='price'
          class="group"
          >
