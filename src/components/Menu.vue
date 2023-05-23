@@ -56,8 +56,9 @@
                 </div>
             </Transition>
         </div>
-        <nav :class="{ hidden: showingMenu }" class="absolute right-0 bg-green-800 [&>*]:m-3      
-            flex flex-col
+        <nav :class="{ hidden: showingMenu }" 
+             class="absolute right-0 bg-green-800 [&>*]:m-3      
+            flex flex-col animate-open-menu
             md:font-semibold sm:hidden sm:[&>*]:hidden
             [&>*]:text-lg text-gray-300     
             h-screen
