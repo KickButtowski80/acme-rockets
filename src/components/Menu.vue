@@ -35,7 +35,14 @@
                     m-2 rounded-2xl border-red-900
                     [&>*]:bg-blue-400 [&>*]:w-6 [&>*]:h-1
                     [&>*]:m-2 cursor-pointer
-                    hover:[&>*]:w-12 " @click="toggleMenu" aria-label="mobile">
+                    hover:[&>*]:w-12
+                    " @click="toggleMenu" aria-label="mobile">
+                    <!-- before:content-[''] 
+                    before:bg-white before:w-8 before:h-1
+                    before:rounded before:absolute
+                    before:-translate-x-4
+                    before:-translate-y-3
+                    before:duration-all -->
                     <hr />
                     <hr />
                     <hr />
