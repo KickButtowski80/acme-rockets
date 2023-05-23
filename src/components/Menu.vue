@@ -30,50 +30,48 @@
                 <ThemeBtn />
             </nav>
             <Transition name="rotate">
-                <div v-show="showingMenu" :class="{ hidden: !showingMenu }" 
+                <div v-show="showingMenu" :class="{ hidden: !showingMenu }"
                  class=" border-2  sm:hidden
                     m-2 rounded-2xl border-red-900
                     [&>*]:bg-blue-400 [&>*]:w-6 [&>*]:h-1
                     [&>*]:m-2 cursor-pointer
-                    hover:[&>*]:w-12 " 
-                    @click="toggleMenu" aria-label="mobile"
-                    >
+                    hover:[&>*]:w-12 " @click="toggleMenu" aria-label="mobile">
                     <hr />
                     <hr />
                     <hr />
                     <!-- &#9776;  it is unicode for hambergure icon-->
                 </div>
-            </Transition >
+            </Transition>
             <Transition name="negative-rotate">
-                <div v-show="!showingMenu" :class="{ hidden: showingMenu }" class=" border-2 sm:hidden
+                <div v-show="!showingMenu" :class="{ hidden: showingMenu }" 
+                class=" border-2 sm:hidden
                     m-2 rounded-2xl border-red-900 [&>*]:bg-blue-400
                     [&>*]:w-10 [&>*]:h-1
                     flex items-center relative
-                     " @click="toggleMenu"
-                     >
+                     " @click="toggleMenu">
                     <hr class="rotate-45 absolute">
                     <hr class="-rotate-45">
                 </div>
             </Transition>
         </div>
         <nav :class="{ hidden: showingMenu }" 
-             class="absolute right-0 bg-green-800 [&>*]:m-3      
+        class="absolute right-0 bg-green-800 [&>*]:m-3      
             flex flex-col animate-open-menu origin-top-right
             md:font-semibold sm:hidden sm:[&>*]:hidden
             [&>*]:text-lg text-gray-300     
             h-screen
             ">
             <Transition name="fade">
-                <a href="#rockets" class="animate-open-menu" v-show="!showingMenu"
-                style=" transition-delay: 100ms ">Our Rocket</a>        
+                <a href="#rockets" class="animate-open-menu" v-show="!showingMenu" style=" transition-delay: 100ms ">Our
+                    Rocket</a>
             </Transition>
             <Transition name="fade">
                 <a href="#testmonials" class="animate-open-menu" v-show="!showingMenu"
-                     style=" transition-delay: 300ms ">Testmonials</a>
+                    style=" transition-delay: 300ms ">Testmonials</a>
             </Transition>
             <Transition name="fade">
                 <a href="#contact-us" class="animate-open-menu" v-show="!showingMenu"
-                style=" transition-delay: 400ms ">Contact Us</a>
+                    style=" transition-delay: 400ms ">Contact Us</a>
             </Transition>
             <ThemeBtn />
         </nav>
@@ -125,11 +123,11 @@ export default {
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
 }
 
 .fade-enter-from,
 .fade-leave-to {
-  opacity: 0;
+    opacity: 0;
 }
 </style>
