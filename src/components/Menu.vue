@@ -58,7 +58,7 @@
         </div>
         <nav :class="{ hidden: showingMenu }" 
              class="absolute right-0 bg-green-800 [&>*]:m-3      
-            flex flex-col animate-open-menu
+            flex flex-col animate-open-menu origin-top-right
             md:font-semibold sm:hidden sm:[&>*]:hidden
             [&>*]:text-lg text-gray-300     
             h-screen
