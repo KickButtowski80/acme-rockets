@@ -22,14 +22,18 @@ export default {
       },
       keyframes: {
         'open-menu': {
-          '0%': { transform: 'scaley(0)' },
+          '0%': { transform: 'scaley(0)', display: 'block' },
           '80%': { transform: 'scaley(1.2)' },
-          '100%': { transform: 'scaley(1)' },
+          '100%': {
+            transform: 'scaley(1)',
+            
+          },
         },
         'close-menu': {
           '0%': { transform: 'scaley(1)' },
-          '80%': { transform: 'scaley(1.2)' },
-          '100%': { transform: 'scaley(0)' },
+          '80%': { transform: 'scaley(0.5)' },
+          '100%': { transform: 'scaley(0)',
+          display: 'none' },
         },
       },
       animation: {

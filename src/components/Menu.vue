@@ -7,7 +7,7 @@
                 <img class="w-8 ml-3" src="/favicon.ico" alt="aceme rocket logo">
                 <h2 class="text-2xl md:text-3xl font-bold
                             ml-3">
-                    <a href="#hero">Acme Rockets</a>
+                    <a href="#hero">Acme Rockets1</a>
                 </h2>
             </div>
             <nav class="hidden m-2
@@ -51,7 +51,7 @@
             </Transition>
             <Transition name="negative-rotate">
                 <div v-show="!showingMenu" :class="{ hidden: showingMenu }" 
-                class=" border-2 sm:hidden
+                class=" border-2 sm:hidden 
                     m-2 rounded-2xl border-red-900 [&>*]:bg-blue-400
                     [&>*]:w-10 [&>*]:h-1
                     flex items-center relative
@@ -61,27 +61,32 @@
                 </div>
             </Transition>
         </div>
-        <nav :class="{ hidden: showingMenu }" 
-        class="absolute right-0 bg-green-800 [&>*]:m-3      
-            flex flex-col animate-open-menu origin-top-right
-            md:font-semibold sm:hidden sm:[&>*]:hidden
-            [&>*]:text-lg text-gray-300     
-            h-screen
-            ">
-            <Transition name="fade">
-                <a href="#rockets" class="animate-open-menu" v-show="!showingMenu" style=" transition-delay: 100ms ">Our
-                    Rocket</a>
-            </Transition>
-            <Transition name="fade">
-                <a href="#testmonials" class="animate-open-menu" v-show="!showingMenu"
-                    style=" transition-delay: 300ms ">Testmonials</a>
-            </Transition>
-            <Transition name="fade">
-                <a href="#contact-us" class="animate-open-menu" v-show="!showingMenu"
-                    style=" transition-delay: 400ms ">Contact Us</a>
-            </Transition>
-            <ThemeBtn />
-        </nav>
+   
+            <nav :class="{ 
+                 'animate-open-menu': !showingMenu,
+                 'animate-close-menu': showingMenu,
+                 'origin-top-right': !showingMenu,
+                 'origin-bottom-right': showingMenu}" 
+            class="absolute right-0 bg-green-800 [&>*]:m-3      
+                flex flex-col
+                md:font-semibold sm:hidden sm:[&>*]:hidden
+                [&>*]:text-lg text-gray-300     
+                h-screen
+                ">
+                <Transition name="fade">
+                    <a href="#rockets" class="animate-open-menu" v-show="!showingMenu" style=" transition-delay: 100ms ">Our
+                        Rocket</a>
+                </Transition>
+                <Transition name="fade">
+                    <a href="#testmonials" class="animate-open-menu" v-show="!showingMenu"
+                        style=" transition-delay: 300ms ">Testmonials</a>
+                </Transition>
+                <Transition name="fade">
+                    <a href="#contact-us" class="animate-open-menu" v-show="!showingMenu"
+                        style=" transition-delay: 400ms ">Contact Us</a>
+                </Transition>
+                <ThemeBtn v-show="!showingMenu"/>
+            </nav>
     </div>
 </template>
 <script>
