@@ -21,10 +21,16 @@
 }
 
 @layer components {
-  #cards:has(.group:hover) .card:not(.card:hover) p,
-  #cards:has(.group:hover) .card:not(.card:hover) h5 {
+  #cards:has(.group:hover) .card:not(:hover) p,
+  #cards:has(.group:hover) .card:not(:hover) h1 {
     display: none;
   }
+
+  #cards:has(.group:hover)  p {
+    font-size: 3vw;
+   color: blue;
+  }
+
 
   .group {
     display: flex;

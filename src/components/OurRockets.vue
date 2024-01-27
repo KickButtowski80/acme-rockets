@@ -14,8 +14,8 @@
             ">
             <img :src='img' :alt='name'
              class="w-1/3">
-            <h5>{{name}}</h5>
-            <p  class='md:hidden'>{{price.amount}}</p>
+            <h1>{{name}}</h1>
+            <p  class=''>{{price.amount}}</p>
             <p  class='hidden md:block group-hover:hidden             
             '>{{price.explanation}}</p>            
             <hr class=" bg-blue-700 
